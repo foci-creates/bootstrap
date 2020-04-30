@@ -53,7 +53,7 @@ body {
 
 .dark-overlay {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: $dark-overlay;
   top: 0;
   left: 0;
   width: 100%;
@@ -73,7 +73,37 @@ body {
   }
 }
 
-footer#main-footer{
+footer#main-footer {
   background:#000;
   color:#fff;
+}
+
+#page-header {
+  height:200px;
+  background:url('../img/image1.jpg');
+  background-position:0 -360px;
+  background-attachment:fixed;
+  color:#fff;
+  border-bottom:1px #eee solid;
+  padding-top:50px;
+}
+
+#about {
+  img{
+    margin-top:-50px;
+  }
+}
+
+#faq {
+  .card {
+    border:#444;
+    a {
+      color:#fff;
+      text-decoration:none;
+    }
+  }
+
+  .card-body, .card-header {
+    background:#333;
+  }
 }
